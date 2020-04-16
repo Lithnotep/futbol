@@ -6,7 +6,7 @@ require 'pry'
 class TeamTest < Minitest::Test
 
   def setup
-    @csv_teams = CSV.read('./data/teams_fixture.csv', headers: true, header_converters: :symbol)
+    @csv_teams = CSV.read('./data/teams.csv', headers: true, header_converters: :symbol)
     @team = Team.new(@csv_teams[0])
   end
 
